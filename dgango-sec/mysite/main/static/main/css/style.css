@@ -1,0 +1,116 @@
+@import url(./fonts.css);
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: Outfit;
+}
+
+.container {
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+
+.logo__list {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    list-style: none;
+    padding: 0px;
+}
+
+.logo__text {
+    text-align: center;
+    color: #212A3E;
+    font-size: 16px;
+
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #212A3E;
+    padding: 5px;
+    border: 2.5px solid #212A3E;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.nav__item a:hover {
+	background: rgba(0,0,0,0);
+	color: #212A3E;
+	box-shadow: inset 0 0 0 2px #212A3E;
+}
+
+.home__title {
+    font-size: 22px;
+    font-family: Outfit;
+    color: #212A3E;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.channels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border: 3px solid #212A3E;
+    text-align: start;
+
+}
+
+.chanels__title {
+    font-size: 18px;
+    font-family: Outfit;
+    color: #212A3E;
+}
+
+.chanels__ava {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.chanels__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.chanels__item {
+    width: 380px;
+    font-size: 18px;
+}
+
+.chanels__item2 {
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.chanels__link {
+    margin-left: 150px;
+}
+

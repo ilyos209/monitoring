@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<h1 class="home__title">Noqonuniy faoliyat olib borayatgan tashkilotlar ro'yxati</h1>
+{% for el in tasks %}
+<div class="channels">
+  <ul class="chanels__list">
+    <li class="chanels__item">
+      <h3 class="chanels__title">{{ el.title }}</h3>
+    </li>
+    <li class="chanels__item"><a class="chanels__link" href="https://{{ el.task }}">{{ el.task }}</a></li>
+    <li class="chanels__item2"><img class="chanels__ava" src="{{ el.image.url }}" alt=""></li>
+  </ul>
+</div>
+{% endfor %}
+{% endblock %} 
+
+
+

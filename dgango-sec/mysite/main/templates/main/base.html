@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> {% block title %} {% endblock %} </title>
+  <link type="text/css" rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo__wrapper">
+      <a href="{% url 'home' %}" class="logo__link">
+        <ul class="logo__list">
+          <li class="logo__item"><img src="{% static 'main/images/logo.png' %}" alt="" class="logo__img"></li>
+          <li class="logo__item">
+            <p class="logo__text">Ichki Ishlar Vazirligi <br> Akademiya</p>
+          </li>
+        </ul>
+      </a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="nav__item"><a href="{% url 'about' %}">About</a></li>
+      </ul>
+    </div>
+    {% block content %} {% endblock %}
+  </div>
+
+</body>
+
+</html>
